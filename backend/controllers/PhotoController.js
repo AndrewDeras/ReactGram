@@ -201,7 +201,7 @@ const commentPhoto = async (req, res) => {
 //search photo by title
 
 const searchPhotos = async (req, res) => {
-  const { q } = req.params;
+  const { q } = req.query;
 
   const photos = await Photo.find({ title: new RegExp(q, "i") }).exec();
 
