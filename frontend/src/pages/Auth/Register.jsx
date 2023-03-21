@@ -7,8 +7,22 @@ import { useState, useEffect } from "react";
 
 const Register = () => {
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const user = {
+      name,
+      email,
+      password,
+      confirmPassword
+    }
+
+    console.log(user);
   };
 
   return (
@@ -18,10 +32,18 @@ const Register = () => {
         Cadastre-se para ver fotos dos seus amigos.
       </p>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Nome" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Senha" />
-        <input type="password" placeholder="Confirme a senha" />
+        <input type="text" placeholder="Nome"
+          onChange={({ target }) => setName(target.value)}
+          value={name || ""} />
+        <input type="email" placeholder="Email"
+          onChange={({ target }) => setEmail(target.value)}
+          value={email || ""} />
+        <input type="password" placeholder="Senha"
+          onChange={({ target }) => setPassword(target.value)}
+          value={password || ""} />
+        <input type="password" placeholder="Confirme a senha"
+          onChange={({ target }) => setConfirmPassword(target.value)}
+          value={confirmPassword || ""} />
         <input type="submit" value="Cadastrar" />
       </form>
       <p>
