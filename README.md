@@ -12,4 +12,3 @@ JavaScript: ![JavaScript](https://img.icons8.com/color/48/000000/javascript--v1.
 React: ![React](https://img.icons8.com/plasticine/100/000000/react.png)
 ExpressJS: ![ExpressJS](https://img.icons8.com/color/48/000000/nodejs.png)
 MongoDB: ![MongoDB](https://img.icons8.com/color/96/000000/mongodb.png)
-Mongoose: ![Mongoose](https://img.icons8.com/color/96/000000/mongodb.png)
