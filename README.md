@@ -4,7 +4,7 @@
 
 O ReactGram é uma rede social semelhante ao Instagram, onde os usuários podem fazer login, compartilhar fotos, deixar comentários e curtidas.
 
-* API hospendada em render.com
+* backend hospendado em render.com
 * Frontend hospedado em vercel.com
 
 ## Link para o site --> <a href="https://react-gram-rho.vercel.app/" target="_blank" >ReactGram</a>
